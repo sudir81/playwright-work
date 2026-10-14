@@ -39,12 +39,16 @@ const checkout = {
 const checkoutOverview = {
     title: 'Checkout: Overview',
     url: urls.checkoutOverview,
+    taxPercentage: 0.08, // 8% tax
 }
 
 const checkoutComplete = {
-    title: 'Checkout: Complete',
+    title: 'Checkout: Complete!',
     url: urls.checkoutComplete,
-    taxPercentage: 0.08, // 8% tax
+    message: 'Thank you for your order!',
+    subMessage: 'Your order has been dispatched, and will arrive just as fast as the pony can get there!',
+    backButtonText: 'Back Home',
+    generatePdfButtonText: 'Generate PDF order',
 }
 
 module.exports = { appName, urls, inventory, cart, checkout, checkoutOverview, checkoutComplete  };

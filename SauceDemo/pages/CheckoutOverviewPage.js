@@ -54,7 +54,7 @@ class CheckoutOverviewPage {
   }
 
   async getItemsTaxAmount() {
-    const taxAmount = await this.getTotalItemsPrice() * 0.08;
+    const taxAmount = await this.getTotalItemsPrice() * checkoutOverview.taxPercentage;
     return taxAmount;
   }
 
